@@ -1,3 +1,55 @@
+*,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    body {
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: aquamarine;
+        color: rgb(63, 62, 62);
+        font-size: 20px;
+    }
+
+    h2 {
+        color: #3f3e3e40;
+        font-size: 100px;
+    }
+
+    p {
+        color: hotpink;
+    }
+
+    #second-p {
+        color: peru;
+    }
+
+    li {
+        display: inline;
+    }
+
+    ul {
+        background-color: black;
+    }
+
+    li a {
+        /* display: block; */
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+    #news {
+        float: right
+    }
+
 .container {
   width: 100%;
   max-width: 1024px;
