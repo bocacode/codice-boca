@@ -1,85 +1,89 @@
 *,
-    *::after,
-    *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: inherit;
-    }
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-    body {
-        box-sizing: border-box;
-    }
+body {
+  box-sizing: border-box;
+  font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+  background: url(https://grillatqc.com/wp-content/uploads/2016/06/menu-background.jpg) no-repeat fixed center;
+  background-size: cover;
+  font-style: ;
+}
 
-    .container {
-        background-color: aquamarine;
-        color: rgb(63, 62, 62);
-        font-size: 20px;
-    }
+ul {
+  display: flex;
+  justify-content: center;
 
-    h2 {
-        color: #3f3e3e40;
-        font-size: 100px;
-    }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
 
-    p {
-        color: hotpink;
-    }
+li {
+  float: left;
+}
 
-    #second-p {
-        color: peru;
-    }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-    li {
-        display: inline;
-    }
-
-    ul {
-        background-color: black;
-    }
-
-    li a {
-        /* display: block; */
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-
-    #news {
-        float: right
-    }
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 
 .container {
+  background-image: url(https://codice-boca.web.app/700x700.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px -190px;
   width: 100%;
   max-width: 1024px;
   padding-right: 15px;
   padding-left: 15px;
+  padding: 0 15px; /* this replaces the top 2 lines - this is the short hand way */
   margin-right: auto;
   margin-left: auto;
+  margin: 7rem auto; /* this replaces the top 2 lines - this is the short hand way */
+  background-color: white;
+  color: rgb(63, 62, 62);
+  font-size: 20px;
+  border-radius: 15px 50px;
+  border: solid #ffaf31 5px;
 }
 
 #hero {
-  background-position: center;
-  background-size: cover;
   min-height: 200px;
-  height: 30vh;
+  height: 0vh;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto 1em;
   position: relative;
   top: 0;
   left: 0;
-  z-index: 0;
-  background-image: url(https://codice-boca.web.app/700x700.webp);
 }
 
 h1 {
   color: #fff;
   line-height: 1;
-  font-size: 50pt;
+  font-size: 70pt;
   font-family: 'Voltage';
-  font-size: 10vw;
   font-weight: 600;
   line-height: 1em;
   text-align: center;
@@ -87,19 +91,27 @@ h1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  background-color: #33333396;
+  width: 100%;
+  padding: 15px 0;
 }
 
 .menu-items {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 5rem auto;
   column-count: 2;
   column-gap: 20px;
+  padding: 0 5rem;
 }
 
 .menu-item {
   font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
   page-break-inside: avoid;
   padding: 0 1em 1em;
+}
+
+.menu-item-description p {
+  font-size: 15px;
 }
 
 h3 {
@@ -115,4 +127,11 @@ h3 {
 .menu-item-description p {
   margin-bottom: 0;
   line-height: 1.2;
+}
+
+footer {
+  text-align: center;
+  background-color: #a9a9a95c;
+  padding: 20px;
+  font-size: 15px;
 }
